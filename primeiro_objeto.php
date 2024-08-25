@@ -7,6 +7,5 @@ class Pessoa {
 }
 
 $pessoa = new Pessoa();
-$pessoa->name = "Miguel Nascimento";
 
 $pessoa->talk();

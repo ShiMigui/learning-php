@@ -13,5 +13,5 @@ echo "<br>";
 echo $person['name'];
 
 echo "<br><br>";
-$carro = ["placa"=> "RIO2A18", "modelo"=> "NUPG 2024", "cor"=> "preto"];
-echo "A placa é ", $carro['placa'], " ele é um modelo ", $carro['modelo'], " ", $carro['cor'];
+$car = ["plate"=> "RIO2A18", "model"=> "NUPG 2024", "cor"=> "black"];
+echo "A plate é ", $car['plate'], " ele é um model ", $car['model'], " ", $car['cor'];

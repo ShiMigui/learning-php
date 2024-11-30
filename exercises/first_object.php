@@ -1,11 +1,11 @@
 <?php
 
-class Pessoa {
+class Person {
     function talk() {
         echo "Hello!";
     }
 }
 
-$pessoa = new Pessoa();
+$person = new Person();
 
-$pessoa->talk();
+$person->talk();

@@ -1,0 +1,13 @@
+services:
+  database:
+    image: mysql:8.0-debian
+    env_file: [ ./conf/database.env ]
+    volumes:
+      - ./database/database.sql:/docker-entrypoint-initdb.d/database.sql
+
+  web:
+    build: ./web
+    depends_on: [ database ]
+    ports: [ "80:80" ]
+    volumes: [ ./web:/var/www/html ]
+    env_file: [ ./conf/web.env ]

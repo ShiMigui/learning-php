@@ -8,12 +8,10 @@ try {
     $con = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
 
     $stmt = $con->prepare("CALL insert_people(:nome, :email);");
-
     $nome = "Lorem ipsum";
     $email = "loremipsum@gmail.com";
     $stmt->bindParam(':nome', $nome);
     $stmt->bindParam(':email', $email);
-
     $stmt->execute();
 
     $result = $con->query("SELECT nm_people, nm_email FROM people");
